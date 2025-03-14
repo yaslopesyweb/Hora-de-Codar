@@ -1,3 +1,7 @@
+//3. Faça um programa para ler 3 valores 
+//(considere que não serão informados valores iguais) e escrever o maior deles.
+
+
 programa {
   funcao inicio() {
 
