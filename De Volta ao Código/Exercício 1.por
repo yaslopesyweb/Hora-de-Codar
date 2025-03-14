@@ -1,23 +1,16 @@
+//1 - Crie uma bomba relógio (usando somente código - para deixar claro!) 
+//cuja contagem regressiva vá de 30 a 0. No final da repetição escreva "EXPLOSÃO".
+
 programa {
   funcao inicio() {
-    inteiro numero1
-    inteiro numero2
-
-    escreva("\nInforme o primeiro número: ")
-    leia(numero1)
-    escreva("\nO usuário informou o número: " + numero1)
     
-    escreva("\nInforme o segundo número: ")
-    leia(numero2)
-    escreva("\nO usuário informou o número: " + numero1)
+    inteiro contador = 30
 
-    enquanto (numero2 <= 0){
-      escreva("\nPor favor, informe um número positivo!")
-      escreva("\nInforme o segundo número: ")
-      leia(numero2)
-      escreva("\nO usuário informou o número: " + numero2)
+    enquanto (contador > 0){
+      escreva ("Detonação em: ", contador, "\n")
+      contador = contador - 1
     }
-    
-    escreva("\nResultado da divisão do primeiro número pelo segundo = ", numero1 / numero2)
+
+    escreva ("EXPLOSÃO!!")
   }
 }
