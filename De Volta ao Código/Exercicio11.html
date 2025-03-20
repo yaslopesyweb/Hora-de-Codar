@@ -1,0 +1,29 @@
+<!--    11 - Escreva um programa para imprimir todas as tabuadas de 1 a N. N será informado pelo usuário.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero = parseInt(prompt("Digite um número: "));
+        var contador = 1;
+        var multiplicador = 1;
+        var resultado = 0;
+
+        while(contador <= numero){
+            document.write("<h1>Tabuada do " + contador + "</h1>");
+            while(multiplicador <= 10){
+                resultado = contador * multiplicador;
+                document.write(contador + " x " + multiplicador + " = " + resultado + "<br>");
+                multiplicador++;
+            }
+            multiplicador = 1;
+            contador++;
+        }
+    </script>
+</body>
+</html>

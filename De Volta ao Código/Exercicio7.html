@@ -1,0 +1,34 @@
+<!-- 7 - Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. São 6 notas ao total.
+Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário.   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nota, media, soma
+
+        contador = 0
+        soma = 0
+        while(contador < 6){
+            nota = parseFloat(prompt("Digite a nota: "))
+            if(nota < 0 || nota > 10){
+                alert("Nota inválida, digite uma nota entre 0 e 10")
+                nota = parseFloat(prompt("Digite a nota: "))
+            }else{
+                soma += nota
+                contador++
+            }
+        }
+        media = soma / 6
+        
+        alert("A média do aluno é: " + media)
+    </script>
+
+    
+</body>
+</html>
